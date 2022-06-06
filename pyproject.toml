@@ -14,12 +14,14 @@ python = "^3.7.3"
 nonebot2 = "^2.0.0-beta.3"
 nonebot-adapter-onebot = "2.1.0"
 lxml = "^4.9.0"
+psutil = "^5.9.1"
+utils = "^1.0.1"
 
 [tool.poetry.dev-dependencies]
 nb-cli = "^0.6.0"
 
 [tool.nonebot]
-plugins = ["nonebot_plugin_youthstudy", "nonebot_plugin_petpet", "nonebot_plugin_heweather", "nonebot_plugin_asoulcnki", "nonebot_plugin_logo"]
+plugins = ["nonebot_plugin_petpet", "nonebot_plugin_heweather", "nonebot_plugin_asoulcnki", "nonebot_plugin_logo", "nonebot_plugin_mcstatus", "nonebot_plugin_everyday_en", "nonebot_plugin_ddcheck", "nonebot_plugin_hitokoto", "nonebot_plugin_auto_teenstudy"]
 plugin_dirs = ["src/plugins"]
 
 [build-system]
