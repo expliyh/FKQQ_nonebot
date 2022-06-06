@@ -2,7 +2,12 @@
 # -*- coding: utf-8 -*-
 
 import nonebot
+import re
 from nonebot.adapters.onebot.v11 import Adapter as ONEBOT_V11Adapter
+from nonebot.adapters.onebot.v11 import MessageSegment
+from nonebot import on_message
+from nonebot.adapters import Bot, Event
+from nonebot.typing import T_State
 
 # Custom your logger
 # 
@@ -30,6 +35,25 @@ nonebot.load_from_toml("pyproject.toml")
 # 
 # config = driver.config
 # do something...
+
+
+fkqq = on_message(priority=1, block=False)
+
+
+@fkqq.handle()
+async def fuck_tencent(bot: Bot, event: Event):
+    if event.get_message().extract_plain_text() == "每日一问":
+        pass
+    else:
+        await fkqq.finish()
+    message = MessageSegment.text("腾讯今天死了吗？")
+    print(event.get_session_id())
+    user_id = event.get_user_id()
+    if event.get_session_id().find("group") == 0:
+        str1 = event.get_session_id()
+        splited = str1.split('_')
+        group_id = splited[1]
+    await fkqq.finish(message=message)
 
 
 if __name__ == "__main__":

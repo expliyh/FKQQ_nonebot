@@ -19,7 +19,7 @@ lxml = "^4.9.0"
 nb-cli = "^0.6.0"
 
 [tool.nonebot]
-plugins = ["nonebot_plugin_youthstudy", "nonebot_plugin_petpet"]
+plugins = ["nonebot_plugin_youthstudy", "nonebot_plugin_petpet", "nonebot_plugin_heweather", "nonebot_plugin_asoulcnki", "nonebot_plugin_logo"]
 plugin_dirs = ["src/plugins"]
 
 [build-system]
