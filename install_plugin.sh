@@ -7,3 +7,4 @@ nb plugin install nonebot_plugin_everyday_en
 nb plugin install nonebot_plugin_ddcheck
 nb plugin install nonebot_plugin_hitokoto
 nb plugin install nonebot_plugin_auto_teenstudy
+nb plugin install haruka_bot
