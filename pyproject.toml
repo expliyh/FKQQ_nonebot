@@ -28,7 +28,7 @@ Jinja2 = "^3.0.0"
 nb-cli = "^0.6.0"
 
 [tool.nonebot]
-plugins = [""]
+plugins = []
 plugin_dirs = ["src/plugins"]
 
 [build-system]
